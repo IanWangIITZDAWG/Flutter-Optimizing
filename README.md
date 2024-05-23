@@ -14,13 +14,13 @@ OK，讓我們來探索這充滿潛力的提升效能技巧吧！
 
 ## 理解 Flutter 渲染過程
 
-Flutter是使用Widget為基礎構建UI
-每個Widget，像是按鈕、文字、圖像等等都是UI中的一塊拼圖
-而每個Widget背後都有一個相對應的RenderObject，變成RenderObject後才會有明確的布局來繪製在畫面上
+Flutter是使用Widget為基礎構建UI  
+每個Widget，像是按鈕、文字、圖像等等都是UI中的一塊拼圖  
+而每個Widget背後都有一個相對應的RenderObject，變成RenderObject後才會有明確的布局來繪製在畫面上  
 讓我們來窺探這其中的機制：渲染過程。  
 ![pipeline.jpg](/images/pipeline.jpg)
 
-請把這個渲染機制大致上有三個階段：
+這個渲染機制大致上有三個階段：
 1. **Build**：在這階段中Widget會開始構建，定義其中的屬性。
 2. **Layout**：在這個階段元素會確定各自的尺寸、位置。
 3. **Painting**：在這階段元素會被繪製出來到你的眼中，文字、顏色、效果都會被套用。
